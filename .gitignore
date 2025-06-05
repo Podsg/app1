@@ -1,15 +1,56 @@
-#python stuff
-venv/
-.pylintrc
+# Python #
+##########
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 
-#ide stuff
-.vscode
-.idea
+# Virtualenv #
+##############
+.env
+.venv/
+env/
+venv/
 
-#django stuff
+# Django #
+##########
+*.log
+*.pot
+*.pyc
 db.sqlite3
+db.sqlite3-journal
 media/
+staticfiles/
+static_root/
+local_settings.py
 
-#macOS
+# VSCode / IDE #
+################
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.pylintrc
+
+# System files #
+################
 .DS_Store
+Thumbs.db
+
+# Node (если используется npm/webpack) #
+#######################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Миграции, которые можно сгенерировать заново (опционально) #
+##############################################################
+**/migrations/*.py
+!**/migrations/__init__.py
